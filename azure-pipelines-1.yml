@@ -24,7 +24,7 @@ steps:
 
 - script: |
     pushd '$(projectRoot)'
-    python -mhtmllib "1.html" test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
+    python -mhtmllib "sample.html" test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
   condition: succeededOrFailed()
   displayName: 'Run tests'
 
